@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"spi_lcd\startup_stm32f103xb.o"
+"spi_lcd\5110.o"
+"spi_lcd\ade7758.o"
+"spi_lcd\main.o"
+"spi_lcd\stm32f1xx_it.o"
+"spi_lcd\stm32f1xx_hal_msp.o"
+"spi_lcd\dwt_delay.o"
+"spi_lcd\stm32f1xx_hal_gpio_ex.o"
+"spi_lcd\stm32f1xx_hal_spi.o"
+"spi_lcd\stm32f1xx_hal.o"
+"spi_lcd\stm32f1xx_hal_rcc.o"
+"spi_lcd\stm32f1xx_hal_rcc_ex.o"
+"spi_lcd\stm32f1xx_hal_gpio.o"
+"spi_lcd\stm32f1xx_hal_dma.o"
+"spi_lcd\stm32f1xx_hal_cortex.o"
+"spi_lcd\stm32f1xx_hal_pwr.o"
+"spi_lcd\stm32f1xx_hal_flash.o"
+"spi_lcd\stm32f1xx_hal_flash_ex.o"
+"spi_lcd\stm32f1xx_hal_exti.o"
+"spi_lcd\stm32f1xx_hal_tim.o"
+"spi_lcd\stm32f1xx_hal_tim_ex.o"
+"spi_lcd\system_stm32f1xx.o"
+--strict --scatter "SPI_LCD\SPI_LCD.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SPI_LCD.map" -o SPI_LCD\SPI_LCD.axf
