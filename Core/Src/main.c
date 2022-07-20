@@ -108,7 +108,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 	ADE7758_Init(&hspi1,ADECS_GPIO_Port,ADECS_Pin);
 	setLcycMode(0);
-	gainSetup(INTEGRATOR_OFF,FULLSCALESELECT_0_5V,GAIN_1,GAIN_1);
+	gainSetup(INTEGRATOR_OFF,FULLSCALESELECT_0_25V,GAIN_1,GAIN_1);
 	setupDivs(DIV,DIV,DIV);
 	resetStatus();
 	LCD5110_init();

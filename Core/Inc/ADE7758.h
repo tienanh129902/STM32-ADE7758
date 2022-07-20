@@ -21,9 +21,9 @@ Last update: 10 Nov 2012
 #define WRITE 0x80     // WRITE bit BT7 to write to registers
 #define CLKIN 10000000 // ADE7758 frec, 10.000000MHz
 #define PERIODO 50     // En realidad es frecuencia, se usa para calcular la cantidad de Ciclos que acumula para la energia.
-#define PHASE_A 1
-#define PHASE_B 2
-#define PHASE_C 3
+#define PHASE_A 0
+#define PHASE_B 1
+#define PHASE_C 2
 
 // Register address
 
